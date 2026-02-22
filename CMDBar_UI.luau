@@ -1551,7 +1551,7 @@ function Library:CreateWindow(Properties)
         }
 
         local function Highlight(String, Color)
-            return string.format("<font color = "rgb(%d, %d, %d)">%s</font>", Color.r * 255, Color.g * 255, Color.b * 255, String)
+            return string.format("<font color = 'rgb(%d, %d, %d)'>%s</font>", Color.r * 255, Color.g * 255, Color.b * 255, String)
         end
 
         local function ConstructString(Highlighted)
