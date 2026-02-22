@@ -21,7 +21,7 @@ Players = cloneref(game:GetService("Players"))
 if not game:IsLoaded() then
     local notLoaded = Instance.new("Message")
     notLoaded.Parent = COREGUI
-    notLoaded.Text = 'LuaDev\'s Infinite Yield is waiting for the game to load'
+    notLoaded.Text = '0xOffset\'s Infinite Yield is waiting for the game to load'
 
     game.Loaded:Wait()
     notLoaded:Destroy()
@@ -227,7 +227,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "LuaDev's Infinite Yield v" .. currentVersion
+Title.Text = "0xOffset's Infinite Yield v" .. currentVersion
 
 do
     local emoji = ({
@@ -637,7 +637,7 @@ Credits.Position = UDim2.new(0, 0, 0.9, 30)
 Credits.Size = UDim2.new(0, 250, 0, 20)
 Credits.Font = Enum.Font.SourceSansLight
 Credits.FontSize = Enum.FontSize.Size18
-Credits.Text = "LuaDev (aka hookmetamethod_hook)"
+Credits.Text = "0xOffset (previously LuaDev)"
 Credits.TextColor3 = Color3.new(1, 1, 1)
 Credits.ZIndex = 10
 
@@ -4611,16 +4611,16 @@ CMDs[#CMDs + 1] = {NAME = 'unguidelete / noguidelete', DESC = 'Disables guidelet
 CMDs[#CMDs + 1] = {NAME = 'stealgui / stealguis [path] [name]', DESC = "Steals the game's gui."}
 CMDs[#CMDs + 1] = {NAME = 'hideldiy / hideui', DESC = 'Hides the main UI'}
 CMDs[#CMDs + 1] = {NAME = 'showldiy / unhideldiy / showui / unhideui', DESC = 'Shows the UI again'}
-CMDs[#CMDs + 1] = {NAME = 'keepldiy / keepldiy', DESC = 'Auto execute LuaDev\'s Infinite Yield when you teleport through servers'}
+CMDs[#CMDs + 1] = {NAME = 'keepldiy / keepldiy', DESC = 'Auto execute 0xOffset\'s Infinite Yield when you teleport through servers'}
 CMDs[#CMDs + 1] = {NAME = 'unkeepldiy / unkeepldiy', DESC = 'Disable keepldiy'}
 CMDs[#CMDs + 1] = {NAME = 'fakeout', DESC = 'TP to the void and then back (useful to kill people attached to you)'}
 CMDs[#CMDs + 1] = {NAME = 'togglekeepldiy / toggleunkeepldiy', DESC = 'Toggle keepldiy'}
-CMDs[#CMDs + 1] = {NAME = 'killldiy / killldiy', DESC = 'Kills LuaDev\'s Infinite Yield'}
+CMDs[#CMDs + 1] = {NAME = 'killldiy / killldiy', DESC = 'Kills 0xOffset\'s Infinite Yield'}
 CMDs[#CMDs + 1] = {NAME = 'savegame / saveplace', DESC = 'Uses saveinstance to save the game'}
 CMDs[#CMDs + 1] = {NAME = 'savelogs', DESC = 'Saves console logs as a file'}
 CMDs[#CMDs + 1] = {NAME = 'clearerror', DESC = 'Clears the annoying box and blur when a game kicks you'}
 CMDs[#CMDs + 1] = {NAME = 'antichatlogger / acl / antichatlogs', DESC = 'Prevents AutoMod from detecting you bypassing chatfilter.'}
-CMDs[#CMDs + 1] = {NAME = 'disableadonis / deleteanticheat / disableanticheat', DESC = 'Attempts to disable Adonis\'s client anti-exploit. Made by LuaDev!'}
+CMDs[#CMDs + 1] = {NAME = 'disableadonis / deleteanticheat / disableanticheat', DESC = 'Attempts to disable Adonis\'s client anti-exploit. Made by 0xOffset!'}
 CMDs[#CMDs + 1] = {NAME = 'antikick / clientantikick (LOCALSCRIPT)', DESC = 'Prevents localscripts from kicking you'}
 CMDs[#CMDs + 1] = {NAME = 'antiteleport / clientantiteleport (LOCALSCRIPT)', DESC = 'Prevents localscripts from teleporting you'}
 CMDs[#CMDs + 1] = {NAME = 'cancelteleport / canceltp / clearteleport / cleartp', DESC = 'Cancels teleports in progress'}
@@ -4642,7 +4642,7 @@ CMDs[#CMDs + 1] = {NAME = 'tweenfly / tfly / twfly [speed]', DESC = 'Makes you f
 CMDs[#CMDs + 1] = {NAME = 'untweenfly / untfly / untwfly', DESC = 'Disables tweenfly'}
 CMDs[#CMDs + 1] = {NAME = 'fly [speed]', DESC = 'Makes you fly'}
 CMDs[#CMDs + 1] = {NAME = 'unfly', DESC = 'Disables fly'}
-CMDs[#CMDs + 1] = {NAME = 'aimbot', DESC = 'Loads LuaDev\'s Light-Weight aimbot.'}
+CMDs[#CMDs + 1] = {NAME = 'aimbot', DESC = 'Loads 0xOffset\'s Light-Weight aimbot.'}
 CMDs[#CMDs + 1] = {NAME = 'flyspeed [num]', DESC = 'Set fly speed (default is 20)'}
 CMDs[#CMDs + 1] = {NAME = 'vehiclefly / vfly [speed]', DESC = 'Makes you fly in a vehicle'}
 CMDs[#CMDs + 1] = {NAME = 'unvehiclefly / unvfly', DESC = 'Disables vehicle fly'}
@@ -5044,7 +5044,7 @@ CMDs[#CMDs + 1] = {NAME = 'unhidechar [player]', DESC = 'Stops hiding the charac
 CMDs[#CMDs + 1] = {NAME = 'unhideallchars', DESC = 'Unhides all the characters.'}
 CMDs[#CMDs + 1] = {NAME = 'printglobals / printg / getglobals / getg', DESC = 'Prints out every global variables'}
 CMDs[#CMDs + 1] = {NAME = 'setglobal / setg [Global Name] [true/false]', DESC = 'Set a global variable to certain value.'}
-CMDs[#CMDs + 1] = {NAME = 'sillyanims', DESC = 'Loads silly animations by LuaDev'}
+CMDs[#CMDs + 1] = {NAME = 'sillyanims', DESC = 'Loads silly animations by 0xOffset'}
 task.wait()
 
 for i = 1, #CMDs do
@@ -10518,10 +10518,10 @@ addcmd('unfreezeanims',{},function(args, speaker)
 end)
 
 addcmd('sillyanims',{},function(args, speaker)
-	notify('Loading LuaDev\'s silly animations...', "Hold on a sec...")
+	notify('Loading 0xOffset\'s silly animations...', "Hold on a sec...")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Steve-Bloks/other/refs/heads/main/sillyanims.lua"))()
 	task.wait(3)
-	notify('LuaDev\'s silly animations', "Rejoin to disable.")
+	notify('0xOffset\'s silly animations', "Rejoin to disable.")
 end)
 
 
@@ -11905,11 +11905,11 @@ addcmd("clearchat", {'cc', 'chatclear','chatc'}, function(args, LocalPlayer)
 	if args[1] and args[1] ~= nil and args[1] ~= "" and args[1] ~= " " then
 	    local blob = "\u{000D}" 
     	local message = "".. blob:rep(100)
-    	chatsend(message .. '[Chat Cleared by LuaDev\'s IY]'..blob..'[Message: '..table.concat(args, " ")..']'..blob)
+    	chatsend(message .. '[Chat Cleared by 0xOffset\'s IY]'..blob..'[Message: '..table.concat(args, " ")..']'..blob)
 	else
 		local blob = "\u{000D}" 
     	local message = "".. blob:rep(100)
-    	chatsend(message .. '[Chat Cleared by LuaDev\'s IY]'..blob)
+    	chatsend(message .. '[Chat Cleared by 0xOffset\'s IY]'..blob)
 	end
 end)
 
@@ -15378,7 +15378,7 @@ task.spawn(function()
     IntroBackground:Destroy()
     minimizeHolder()
     if IsOnMobile then
-        notify("Unstable Device", "On mobile, LuaDev's Infinite Yield has a lot of bugs. It's recommended to use a PC executor")
+        notify("Unstable Device", "On mobile, 0xOffset's Infinite Yield has a lot of bugs. It's recommended to use a PC executor")
         task.wait(3)
     end
     if PlaceId == 574746640 then
