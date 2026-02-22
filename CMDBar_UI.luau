@@ -24,11 +24,11 @@ do
         Type = Type:lower()
 
         if Type == 'error' then
-            error('[ Visual ] Error: ' .. Message)
+            error('[ CMD Bar ] Error: ' .. Message)
         elseif Type == 'log' then
-            print('[ Visual ] ' .. Message)
+            print('[ CMD Bar ] ' .. Message)
         elseif Type == 'warn' then
-            warn('[ Visual ] Warning: ' .. Message)
+            warn('[ CMD Bar ] Warning: ' .. Message)
         end
     end
 
@@ -81,7 +81,7 @@ do
         local DraggingInput, StartPosition
         local DragStart = Vector3.new(0,0,0)
         
-        local Main = CoreGui:FindFirstChild('Visual Command UI Library | .gg/puxxCphTnK').Main
+        local Main = CoreGui:FindFirstChild('CMD Bar UI').Main
         
         local function Update(Input)
             local Delta = Input.Position - DragStart
@@ -220,7 +220,7 @@ do
         BreakAllLoops = true
 
         for _, UI in next, CoreGui:GetChildren() do
-            if UI.Name == 'Visual Command UI Library | .gg/puxxCphTnK' then
+            if UI.Name == 'CMD Bar UI' then
                 for _, Item in next, UI.Main:GetChildren() do
                     if Item.Name ~= 'MainCorner' and Item.Name ~= 'MainStroke' then
                         Item:Destroy()
@@ -357,7 +357,7 @@ function Library:CreateWindow(Properties)
     -- // Create Elements
     local Container = Utility:Create('ScreenGui', {
         Parent = CoreGui,
-        Name = 'Visual Command UI Library | .gg/puxxCphTnK',
+        Name = 'CMD Bar UI',
         ResetOnSpawn = false
     }, {
         Utility:Create('Frame', {
