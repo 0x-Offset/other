@@ -4870,6 +4870,7 @@ if PlaceId == 8286149869 then
 	CMDs[#CMDs + 1] = {NAME = 'gotoarea [attic/spawn/basement/painting]', DESC = 'Teleports you to selected area'}
 	CMDs[#CMDs + 1] = {NAME = 'getbadges', DESC = 'Obtains all secret badges'}
 end
+CMDs[#CMDs + 1] = {NAME = 'skiplevel', DESC = 'Skips the level in interliminality'}
 CMDs[#CMDs + 1] = {NAME = 'walkfling / wfling', DESC = 'Fling people while walking around.'}
 CMDs[#CMDs + 1] = {NAME = 'unwalkfling / unwfling', DESC = 'Fling people while walking around.'}
 CMDs[#CMDs + 1] = {NAME = 'clickfling / cfling / mousefling', DESC = 'Click to fling players, the chance of success will depends on your ping'}
@@ -14170,6 +14171,10 @@ end
 		notify("Therapy 🔊", "You should have all badges, if something went wrong please run the command again or report it to the developer."
 	end)
 end]]
+
+addcmd("skiplevel", {}, function(args, speaker)
+	game:GetService("ReplicatedStorage").ExitMap:FireServer()
+end)
 
 local hb = RunService.Heartbeat
 addcmd('tpwalk', {'teleportwalk', 'cframespeed', 'cspeed', 'cws', 'cwalkspeed', 'cframews', 'cframewalkspeed'}, function(args, speaker)
