@@ -1,5 +1,3 @@
-most stuff in here is old or broken
+most stuff in here is old or broken, im only keeping this up for archival purposes and for the one random dude i met 2 years ago who uses my fork of infinite yield
 
-u should probably not use anything in here besides maybe the hellmet script
-
-all my current projects are still private. (still doing stuff tho)
+all my current projects are still private and wont be put in here. (still doing stuff tho)
